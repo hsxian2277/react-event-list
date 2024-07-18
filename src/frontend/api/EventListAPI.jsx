@@ -67,7 +67,7 @@ export const putEvent = (event, setEvents, toggleEdit) => {
       setEvents((prev) =>
         prev.map((_event) => {
           if (_event.id === data.id) {
-            return event;
+            return data;
           }
           return _event;
         }),
